@@ -3,7 +3,7 @@ import { Award, TrendingUp, Users, FileText } from 'lucide-react';
 function Projects() {
   return (
     <section id="projects" className="py-20 lg:py-32 bg-[#F7F7F5]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-4">
             Projects
@@ -13,7 +13,7 @@ function Projects() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#D3A96F]/20">
+        <div className="reveal-item card-hover bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#D3A96F]/20">
           <div className="p-8 lg:p-12">
             <div className="flex items-start gap-4 mb-6">
               <div className="p-3 bg-[#D3A96F] rounded-lg">

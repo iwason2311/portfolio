@@ -13,50 +13,49 @@
 }
 
 @layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 1s ease-in-out;
-  }
-
-  .animate-fade-up {
-    animation: fadeUp 0.7s ease-out forwards;
+  .hero-title,
+  .hero-subtitle,
+  .hero-cta {
     opacity: 0;
   }
 
-  .animate-fade-slide-right {
-    animation: fadeSlideRight 0.6s ease-out 0.2s forwards;
+  .reveal-section,
+  .reveal-item {
     opacity: 0;
+    transform: translateY(18px);
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .divider-line {
+    transform: scaleX(0);
+    transform-origin: left;
   }
 
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  @keyframes fadeSlideRight {
-    from {
-      opacity: 0;
-      transform: translateX(20px);
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-title,
+    .hero-subtitle,
+    .hero-cta,
+    .reveal-section,
+    .reveal-item,
+    .divider-line {
+      opacity: 1 !important;
+      transform: none !important;
     }
-    to {
-      opacity: 1;
-      transform: translateX(0);
+
+    .card-hover {
+      transition: none !important;
+    }
+
+    .card-hover:hover {
+      transform: none !important;
     }
   }
 }

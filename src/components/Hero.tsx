@@ -11,20 +11,20 @@ function Hero({ scrollToSection }: HeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 space-y-8">
             <div className="space-y-2">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight animate-fade-up">
+              <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
                 Ishaan Wason
               </h1>
-              <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F] animate-fade-slide-right">
+              <p className="hero-subtitle text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F]">
                 Defined by Results
               </p>
             </div>
-            <div className="animate-fade-in">
+            <div className="hero-cta">
               <p className="text-lg sm:text-xl text-[#A8ADB7] leading-relaxed max-w-2xl">
                 Business and economics student mixing creative roots, operational curiosity, and analytical thinking to build structure, solve problems, and execute ideas.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="hero-cta flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollToSection('projects')}
                 className="group px-8 py-4 bg-[#D3A96F] text-[#0E1A2B] rounded-lg font-medium hover:bg-[#C09960] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"

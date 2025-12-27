@@ -102,7 +102,7 @@ function Coursework() {
 
   return (
     <section id="coursework" className="py-20 lg:py-32 bg-[#F7F7F5]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-8 text-center">
           Applied Coursework & Academic Foundations
         </h2>
@@ -113,7 +113,7 @@ function Coursework() {
 
         <div className="space-y-12">
           {areas.map((area, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-8 lg:p-10 border-2 border-[#D3A96F]/20">
+            <div key={index} className="reveal-item card-hover bg-white rounded-xl shadow-lg p-8 lg:p-10 border-2 border-[#D3A96F]/20">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-[#D3A96F] rounded-lg flex-shrink-0">
                   <area.icon size={24} className="text-[#0E1A2B]" />

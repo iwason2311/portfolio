@@ -21,7 +21,7 @@ function Values() {
 
   return (
     <section id="values" className="py-20 lg:py-32 bg-[#F7F7F5]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-16 text-center">
           What I Believe In
         </h2>
@@ -30,7 +30,7 @@ function Values() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 border-2 border-[#D3A96F]/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="reveal-item card-hover group bg-white rounded-2xl p-8 border-2 border-[#D3A96F]/20"
             >
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-4 bg-[#D3A96F] rounded-2xl group-hover:scale-110 transition-transform duration-300">

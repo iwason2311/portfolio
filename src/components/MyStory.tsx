@@ -1,7 +1,7 @@
 function MyStory() {
   return (
     <section id="story" className="py-20 lg:py-32 bg-[#F7F7F5]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-12 text-center">
           How I Started, What I Learned, and Where I'm Going
         </h2>

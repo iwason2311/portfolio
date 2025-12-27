@@ -55,7 +55,7 @@ function Skills() {
 
   return (
     <section id="skills" className="py-20 lg:py-32 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-16 text-center">
           Skills I'm Building
         </h2>
@@ -64,7 +64,7 @@ function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-[#F7F7F5] rounded-xl shadow-lg p-8 border-2 border-[#D3A96F]/20 hover:shadow-xl transition-shadow duration-300"
+              className="reveal-item card-hover bg-[#F7F7F5] rounded-xl shadow-lg p-8 border-2 border-[#D3A96F]/20"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-[#D3A96F] rounded-lg">

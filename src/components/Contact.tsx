@@ -30,7 +30,7 @@ function Contact() {
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reveal-section max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-4">
             Let's Connect
