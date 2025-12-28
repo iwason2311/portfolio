@@ -5,8 +5,8 @@ function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'wasonishaan23@gmail.com',
-      link: 'mailto:wasonishaan23@gmail.com',
+      value: 'contact@iwason.com',
+      link: 'mailto:contact@iwason.com',
     },
     {
       icon: MapPin,
@@ -76,7 +76,7 @@ function Contact() {
           <div className="mt-8 pt-8 border-t-2 border-[#D3A96F]/20">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:wasonishaan23@gmail.com"
+                href="mailto:contact@iwason.com"
                 className="px-8 py-4 bg-[#D3A96F] text-[#0E1A2B] rounded-lg font-medium hover:bg-[#C09960] transition-colors text-center shadow-lg hover:shadow-xl"
               >
                 Send an Email
