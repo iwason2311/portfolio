@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'story', 'now', 'education', 'projects', 'experience', 'skills', 'coursework', 'values', 'contact'];
+      const sections = ['hero', 'story', 'now', 'education', 'experience', 'projects', 'skills', 'coursework', 'values', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -51,8 +51,8 @@ function App() {
     { id: 'story', label: 'My Story' },
     { id: 'now', label: 'What I Do' },
     { id: 'education', label: 'Education' },
-    { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
+    { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
     { id: 'coursework', label: 'Coursework' },
     { id: 'values', label: 'Values' },
@@ -122,8 +122,8 @@ function App() {
         <MyStory />
         <WhatIDo />
         <Education />
-        <Projects />
         <Experience />
+        <Projects />
         <Skills />
         <Coursework />
         <Values />
