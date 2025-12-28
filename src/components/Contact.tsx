@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Instagram, MapPin, Download } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Download } from 'lucide-react';
 
 function Contact() {
   const resumes = [
@@ -27,12 +27,6 @@ function Contact() {
       label: 'LinkedIn',
       value: 'linkedin.com/in/iwason',
       link: 'https://linkedin.com/in/iwason',
-    },
-    {
-      icon: Instagram,
-      label: 'Instagram',
-      value: 'Creative Work',
-      link: null,
     },
   ];
 
