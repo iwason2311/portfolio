@@ -44,7 +44,7 @@ function Contact() {
             Let's Connect
           </h2>
           <p className="text-xl text-[#A8ADB7]">
-            I'm always open to discussing operations, strategy, or creative projects.
+            I'm always open to discussing new opportunities.
           </p>
         </div>
 
