@@ -1,6 +1,14 @@
-import { Mail, Linkedin, Instagram, MapPin } from 'lucide-react';
+import { Mail, Linkedin, Instagram, MapPin, Download } from 'lucide-react';
 
 function Contact() {
+  const resumes = [
+    {
+      label: 'Download Resume (PDF)',
+      file: '/iwason-new.pdf',
+      filename: 'Ishaan_Wason_Resume.pdf',
+    },
+  ];
+
   const contactInfo = [
     {
       icon: Mail,
@@ -38,6 +46,20 @@ function Contact() {
           <p className="text-xl text-[#A8ADB7]">
             I'm always open to discussing operations, strategy, or creative projects.
           </p>
+        </div>
+
+        <div className="mb-8 flex justify-center">
+          {resumes.map((resume, index) => (
+            <a
+              key={index}
+              href={resume.file}
+              download={resume.filename}
+              className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-[#D3A96F] text-[#0E1A2B] font-medium hover:bg-[#D3A96F] hover:shadow-lg transition-all duration-200"
+            >
+              <Download size={20} />
+              <span>{resume.label}</span>
+            </a>
+          ))}
         </div>
 
         <div className="bg-[#F7F7F5] rounded-2xl shadow-xl p-8 lg:p-12 border-2 border-[#D3A96F]/20">
