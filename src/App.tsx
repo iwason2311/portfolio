@@ -3,6 +3,7 @@ import { Mail, Linkedin, Menu, X } from 'lucide-react';
 import Hero from './components/Hero';
 import MyStory from './components/MyStory';
 import WhatIDo from './components/WhatIDo';
+import Education from './components/Education';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'story', 'now', 'projects', 'experience', 'skills', 'coursework', 'values', 'contact'];
+      const sections = ['hero', 'story', 'now', 'education', 'projects', 'experience', 'skills', 'coursework', 'values', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -49,6 +50,7 @@ function App() {
     { id: 'hero', label: 'Home' },
     { id: 'story', label: 'My Story' },
     { id: 'now', label: 'What I Do' },
+    { id: 'education', label: 'Education' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
@@ -119,6 +121,7 @@ function App() {
         <Hero scrollToSection={scrollToSection} />
         <MyStory />
         <WhatIDo />
+        <Education />
         <Projects />
         <Experience />
         <Skills />
