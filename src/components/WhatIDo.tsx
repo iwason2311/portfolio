@@ -8,11 +8,11 @@ function WhatIDo() {
 
         <div className="space-y-6 text-lg text-[#0E1A2B] leading-relaxed">
           <p>
-            I am actively strengthening my operational and analytical skills while staying connected to marketing through content and student organization work. I enjoy mapping processes, improving workflows, and understanding how teams function internally.
+            I am actively developing my operational and analytical skills while staying connected to marketing through content and student organization work. I focus on mapping processes, improving workflows, and understanding how teams function internally.
           </p>
 
           <p>
-            Alongside this, I am exploring a personal interest connected to my family's textile business. My grandfather built a hand-dyeing and textile operation producing scarves and fabrics. I have always wanted to see if a modern version of that business could work in a cold country like Canada. I am researching materials, product positioning, logistics, consumer demand, and whether a small overseas revival is realistic.
+            Alongside this, I am exploring a small personal project connected to my family's textile business as a practical way to think through product positioning, logistics, and market feasibility in a new geography.
           </p>
         </div>
       </div>
