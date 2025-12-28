@@ -8,27 +8,23 @@ function MyStory() {
 
         <div className="space-y-6 text-lg text-[#0E1A2B] leading-relaxed">
           <p>
-            I came to university thinking I would finish a business degree and follow a straightforward path. Then economics changed everything. It showed me how markets behave, how decisions move through systems, and how incentives shape the real world. It pushed me to think more deeply about business, strategy, and finance.
+            I came to university expecting to complete a business degree and follow a straightforward path. Economics changed that. It showed me how decisions move through systems, how incentives shape behavior, and how markets function beneath the surface. It pushed me to think more deeply about business, not just as ideas, but as structures that need to work in practice.
           </p>
 
           <p>
-            Parallel to that, I always had a creative side. Photography, content, storytelling. I never built a public page for it, but I always enjoyed capturing and creating things. My first proper step into that world came with Yeh Mera India, where I learned content creation, sales outreach, community marketing, and digital tools used in real organizations.
+            Alongside this, I always had a creative side. Photography, content, and storytelling were interests I explored quietly, without turning them into a public portfolio. My first real exposure came through Yeh Mera India, where I worked on content creation, outreach, and community-driven marketing. That experience gave me a practical view of how organizations communicate, coordinate, and operate day to day.
           </p>
 
           <p>
-            Later I worked with Smartserve as an AI/ML analyst, which gave me exposure to analytical tasks, workflow thinking, Microsoft Azure and the basics of AI - supported opperations.
+            Later, I worked with SmartServe in an AI / ML focused role, supporting analytical tasks and project workflows. Through that experience, I was introduced to structured problem solving, process thinking, Microsoft Azure, and how technology supports operations rather than replaces them.
           </p>
 
           <p>
-            My biggest turning point came with Habitat for Humanity Windsor Essex. I joined expecting a marketing role but found myself learning operations from the inside. Talking to donors, supporting salvage logistics, managing partnerships, sitting in on meetings, and understanding how the organization keeps moving taught me more about business operations than any course could. I discovered that I enjoy seeing how things actually work behind the scenes.
+            My biggest shift came with Habitat for Humanity Windsor Essex. I joined expecting a marketing role, but the experience quickly became broader. Working with donors, supporting salvage logistics, coordinating partnerships, and observing internal discussions exposed me to how nonprofit organizations operate on the ground. I saw the realities behind initiatives, the constraints they face, and how mission, resources, and execution must align for work to move forward.
           </p>
 
           <p>
-            That shifted my direction. Today, I am building toward roles in business operations, financial operations, and strategy-based problem solving. I enjoy structure, clarity, and execution, but I also carry the creative instincts that helped me start my journey.
-          </p>
-
-          <p className="text-[#D3A96F] font-medium text-xl pt-4">
-            
+            That experience grounded my understanding of business in reality. It reshaped how I think about organizations, not as abstract strategies, but as systems built on people, processes, and execution.
           </p>
         </div>
       </div>
