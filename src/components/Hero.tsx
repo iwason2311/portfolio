@@ -6,12 +6,12 @@ interface HeroProps {
 
 function Hero({ scrollToSection }: HeroProps) {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0E1A2B]">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0E1A2B] dark:bg-[#151923] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 space-y-8">
             <div className="space-y-2">
-              <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
+              <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight">
                 Ishaan Wason
               </h1>
               <p className="hero-subtitle text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F]">
@@ -19,7 +19,7 @@ function Hero({ scrollToSection }: HeroProps) {
               </p>
             </div>
             <div className="hero-cta">
-              <p className="text-lg sm:text-xl text-[#A8ADB7] leading-relaxed max-w-2xl">
+              <p className="text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-relaxed max-w-2xl">
                 Focused on how businesses actually work — the economics behind decisions, the operations behind execution.
               </p>
             </div>
@@ -27,14 +27,14 @@ function Hero({ scrollToSection }: HeroProps) {
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollToSection('projects')}
-                className="group px-8 py-4 bg-[#D3A96F] text-[#0E1A2B] rounded-lg font-medium hover:bg-[#C09960] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                className="group px-8 py-4 bg-[#D3A96F] text-[#0E1A2B] dark:text-[#1A1F2E] rounded-lg font-medium hover:bg-[#C09960] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
               >
                 See My Projects
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </button>
               <button
                 onClick={() => scrollToSection('story')}
-                className="px-8 py-4 bg-transparent text-[#F7F7F5] rounded-lg font-medium hover:bg-[#F7F7F5]/10 transition-all duration-300 border-2 border-[#D3A96F] hover:border-[#C09960] shadow-md"
+                className="px-8 py-4 bg-transparent text-[#F7F7F5] dark:text-[#E8E9ED] rounded-lg font-medium hover:bg-[#F7F7F5]/10 dark:hover:bg-[#E8E9ED]/10 transition-all duration-300 border-2 border-[#D3A96F] hover:border-[#C09960] shadow-md"
               >
                 Read My Story
               </button>

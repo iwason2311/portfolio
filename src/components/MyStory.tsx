@@ -1,12 +1,12 @@
 function MyStory() {
   return (
-    <section id="story" className="py-20 lg:py-32 bg-[#F7F7F5]">
+    <section id="story" className="py-20 lg:py-32 bg-[#F7F7F5] dark:bg-[#242936] transition-colors duration-300">
       <div className="reveal-section max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-12 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-12 text-center">
           How I Started, What I Learned, and Where I'm Going
         </h2>
 
-        <div className="space-y-6 text-lg text-[#0E1A2B] leading-relaxed">
+        <div className="space-y-6 text-lg text-[#0E1A2B] dark:text-[#B0B3BA] leading-relaxed">
           <p>
             I came to university expecting to complete a business degree and follow a straightforward path. Economics changed that. It showed me how decisions move through systems, how incentives shape behavior, and how markets function beneath the surface. It pushed me to think more deeply about business, not just as ideas, but as structures that need to work in practice.
           </p>

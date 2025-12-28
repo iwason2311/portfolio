@@ -84,9 +84,9 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 lg:py-32 bg-white">
+    <section id="experience" className="py-20 lg:py-32 bg-white dark:bg-[#1A1F2E] transition-colors duration-300">
       <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-16 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-16 text-center">
           Experience
         </h2>
 
@@ -94,7 +94,7 @@ function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="reveal-item card-hover bg-[#F7F7F5] rounded-xl shadow-lg overflow-hidden border-2 border-[#D3A96F]/20"
+              className="reveal-item card-hover bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg overflow-hidden border-2 border-[#D3A96F]/20 transition-colors duration-300"
             >
               <div className="p-8 lg:p-10">
                 <div className="flex items-start gap-4 mb-6">
@@ -104,14 +104,14 @@ function Experience() {
                   <div className="flex-1">
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-2xl font-bold text-[#0E1A2B] mb-1">
+                        <h3 className="text-2xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-1">
                           {exp.title}
                         </h3>
                         <p className="text-lg text-[#D3A96F] font-medium">
                           {exp.role}
                         </p>
                       </div>
-                      <div className="text-sm text-[#A8ADB7] font-medium lg:text-right">
+                      <div className="text-sm text-[#A8ADB7] dark:text-[#B0B3BA] font-medium lg:text-right">
                         <p>{exp.period}</p>
                         <p>{exp.location}</p>
                       </div>
@@ -120,7 +120,7 @@ function Experience() {
                       {exp.highlights.map((highlight, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <span className="w-1.5 h-1.5 bg-[#D3A96F] rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="text-[#0E1A2B] leading-relaxed">
+                          <span className="text-[#0E1A2B] dark:text-[#B0B3BA] leading-relaxed">
                             {highlight}
                           </span>
                         </li>
@@ -133,14 +133,14 @@ function Experience() {
                   <div className="mt-8 pt-8 border-t-2 border-[#D3A96F]/20">
                     <div className="flex items-center gap-2 mb-4">
                       <Image size={20} className="text-[#D3A96F]" />
-                      <h4 className="text-lg font-semibold text-[#0E1A2B]">
+                      <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
                         Work Showcase
                       </h4>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                       {exp.title === 'Habitat for Humanity Windsor-Essex' ? (
                         <>
-                          <div className="aspect-video bg-white rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
+                          <div className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
                             <img
                               src="/screenshot_2025-12-26_at_7.43.57_am.png"
                               alt="Habitat for Humanity ReStore"
@@ -148,7 +148,7 @@ function Experience() {
                             />
                           </div>
                           <div className="space-y-2">
-                            <div className="bg-white rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
+                            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
                               <img
                                 src="/screenshot_2025-12-26_at_8.39.09_am.png"
                                 alt="Meeting with Richard Peddie"
@@ -160,12 +160,12 @@ function Experience() {
                             </p>
                           </div>
                           <div
-                            className="aspect-video bg-white rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
+                            className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
                           >
                             <div className="w-full h-full flex items-center justify-center">
                               <div className="text-center space-y-2">
-                                <Image size={32} className="mx-auto text-[#A8ADB7]" />
-                                <p className="text-xs font-medium text-[#A8ADB7]">
+                                <Image size={32} className="mx-auto text-[#A8ADB7] dark:text-[#B0B3BA]" />
+                                <p className="text-xs font-medium text-[#A8ADB7] dark:text-[#B0B3BA]">
                                   Showcase Item 3
                                 </p>
                               </div>
@@ -176,12 +176,12 @@ function Experience() {
                         [1, 2, 3].map((item) => (
                           <div
                             key={item}
-                            className="aspect-video bg-white rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
+                            className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
                           >
                             <div className="w-full h-full flex items-center justify-center">
                               <div className="text-center space-y-2">
-                                <Image size={32} className="mx-auto text-[#A8ADB7]" />
-                                <p className="text-xs font-medium text-[#A8ADB7]">
+                                <Image size={32} className="mx-auto text-[#A8ADB7] dark:text-[#B0B3BA]" />
+                                <p className="text-xs font-medium text-[#A8ADB7] dark:text-[#B0B3BA]">
                                   Showcase Item {item}
                                 </p>
                               </div>
@@ -197,7 +197,7 @@ function Experience() {
                   <div className={`${exp.hasShowcase ? 'mt-8' : 'mt-8 pt-8 border-t-2 border-[#D3A96F]/20'}`}>
                     <div className="flex items-center gap-2 mb-4">
                       <FileText size={20} className="text-[#D3A96F]" />
-                      <h4 className="text-lg font-semibold text-[#0E1A2B]">
+                      <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
                         Attachments
                       </h4>
                     </div>
@@ -208,12 +208,12 @@ function Experience() {
                           href={attachment.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-3 p-4 bg-white rounded-lg border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors group"
+                          className="flex items-center gap-3 p-4 bg-white dark:bg-[#1A1F2E] rounded-lg border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors group"
                         >
                           <div className="p-2 bg-[#D3A96F]/10 rounded-lg group-hover:bg-[#D3A96F]/20 transition-colors">
                             <FileText size={20} className="text-[#D3A96F]" />
                           </div>
-                          <span className="text-[#0E1A2B] font-medium group-hover:text-[#D3A96F] transition-colors">
+                          <span className="text-[#0E1A2B] dark:text-[#E8E9ED] font-medium group-hover:text-[#D3A96F] transition-colors">
                             {attachment.name}
                           </span>
                         </a>

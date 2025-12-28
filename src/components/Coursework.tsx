@@ -101,24 +101,24 @@ function Coursework() {
   ];
 
   return (
-    <section id="coursework" className="py-20 lg:py-32 bg-[#F7F7F5]">
+    <section id="coursework" className="py-20 lg:py-32 bg-[#F7F7F5] dark:bg-[#242936] transition-colors duration-300">
       <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-8 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-8 text-center">
           Applied Coursework & Academic Foundations
         </h2>
 
-        <p className="text-lg text-[#0E1A2B] leading-relaxed text-center max-w-4xl mx-auto mb-16">
+        <p className="text-lg text-[#0E1A2B] dark:text-[#B0B3BA] leading-relaxed text-center max-w-4xl mx-auto mb-16">
           My academic training combines economics, business, finance, and policy with an applied focus on how organizations, markets, and systems actually function.
         </p>
 
         <div className="space-y-12">
           {areas.map((area, index) => (
-            <div key={index} className="reveal-item card-hover bg-white rounded-xl shadow-lg p-8 lg:p-10 border-2 border-[#D3A96F]/20">
+            <div key={index} className="reveal-item card-hover bg-white dark:bg-[#1A1F2E] rounded-xl shadow-lg p-8 lg:p-10 border-2 border-[#D3A96F]/20 transition-colors duration-300">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-[#D3A96F] rounded-lg flex-shrink-0">
                   <area.icon size={24} className="text-[#0E1A2B]" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0E1A2B]">
+                <h3 className="text-2xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED]">
                   {area.title}
                 </h3>
               </div>
@@ -126,7 +126,7 @@ function Coursework() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {area.courses.map((course, idx) => (
                   <div key={idx} className="space-y-1">
-                    <h4 className="text-[#0E1A2B] font-semibold">
+                    <h4 className="text-[#0E1A2B] dark:text-[#E8E9ED] font-semibold">
                       {course.name}
                     </h4>
                     <p className="text-[#D3A96F] leading-relaxed">

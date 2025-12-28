@@ -54,9 +54,9 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 lg:py-32 bg-white">
+    <section id="skills" className="py-20 lg:py-32 bg-white dark:bg-[#1A1F2E] transition-colors duration-300">
       <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-16 text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-16 text-center">
           Skills I'm Building
         </h2>
 
@@ -64,13 +64,13 @@ function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="reveal-item card-hover bg-[#F7F7F5] rounded-xl shadow-lg p-8 border-2 border-[#D3A96F]/20"
+              className="reveal-item card-hover bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg p-8 border-2 border-[#D3A96F]/20 transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-[#D3A96F] rounded-lg">
                   <category.icon size={24} className="text-[#0E1A2B]" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0E1A2B]">
+                <h3 className="text-2xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED]">
                   {category.title}
                 </h3>
               </div>
@@ -79,7 +79,7 @@ function Skills() {
                 {category.skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-2 bg-[#D3A96F]/10 text-[#0E1A2B] rounded-lg text-sm font-medium hover:bg-[#D3A96F]/20 transition-colors border border-[#D3A96F]/30"
+                    className="px-4 py-2 bg-[#D3A96F]/10 text-[#0E1A2B] dark:text-[#E8E9ED] rounded-lg text-sm font-medium hover:bg-[#D3A96F]/20 transition-colors border border-[#D3A96F]/30"
                   >
                     {skill}
                   </span>
@@ -89,26 +89,26 @@ function Skills() {
           ))}
         </div>
 
-        <div className="mt-12 bg-[#F7F7F5] rounded-xl p-8 border-2 border-[#D3A96F]/20">
-          <h3 className="text-2xl font-bold text-[#0E1A2B] mb-4 text-center">
+        <div className="mt-12 bg-[#F7F7F5] dark:bg-[#242936] rounded-xl p-8 border-2 border-[#D3A96F]/20 transition-colors duration-300">
+          <h3 className="text-2xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-4 text-center">
             Certifications & Learning
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white rounded-lg p-4 border border-[#D3A96F]/20">
-              <p className="font-semibold text-[#0E1A2B]">Microsoft Certified: Azure AI Fundamentals (AI-900)</p>
+            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg p-4 border border-[#D3A96F]/20 transition-colors duration-300">
+              <p className="font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">Microsoft Certified: Azure AI Fundamentals (AI-900)</p>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#D3A96F]/20">
-              <p className="font-semibold text-[#0E1A2B]">Microsoft Certified: Azure Fundamentals (AZ-900)</p>
+            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg p-4 border border-[#D3A96F]/20 transition-colors duration-300">
+              <p className="font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">Microsoft Certified: Azure Fundamentals (AZ-900)</p>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#D3A96F]/20">
-              <p className="font-semibold text-[#0E1A2B]">University of Illinois: Marketing in a Digital World</p>
+            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg p-4 border border-[#D3A96F]/20 transition-colors duration-300">
+              <p className="font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">University of Illinois: Marketing in a Digital World</p>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#D3A96F]/20">
-              <p className="font-semibold text-[#0E1A2B]">Six Sigma Green Belt Specialization (Ongoing)</p>
-              <p className="text-sm text-[#A8ADB7]">Kennesaw State University via Coursera</p>
+            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg p-4 border border-[#D3A96F]/20 transition-colors duration-300">
+              <p className="font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">Six Sigma Green Belt Specialization (Ongoing)</p>
+              <p className="text-sm text-[#A8ADB7] dark:text-[#B0B3BA]">Kennesaw State University via Coursera</p>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#D3A96F]/20">
-              <p className="font-semibold text-[#0E1A2B]">Amity University: Marketing & Sales Summer School</p>
+            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg p-4 border border-[#D3A96F]/20 transition-colors duration-300">
+              <p className="font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">Amity University: Marketing & Sales Summer School</p>
             </div>
           </div>
         </div>
