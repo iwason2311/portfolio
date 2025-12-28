@@ -37,7 +37,7 @@ function Contact() {
           <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] mb-4">
             Let's Connect
           </h2>
-          <p className="text-xl text-[#A8ADB7]">
+          <p className="text-xl text-[#D3A96F]">
             I'm always open to discussing new opportunities.
           </p>
         </div>
