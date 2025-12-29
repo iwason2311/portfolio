@@ -1,44 +1,10 @@
 import { ChevronDown, ArrowRight } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import { animate } from 'animejs';
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
 }
 
 function Hero({ scrollToSection }: HeroProps) {
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
-
-  useEffect(() => {
-    if (titleRef.current) {
-      const title = titleRef.current;
-      title.innerHTML = title.textContent!.replace(/\S/g, "<span class='letter inline-block'>$&</span>");
-
-      animate({
-        targets: '.hero-title .letter',
-        translateY: [40, 0],
-        opacity: [0, 1],
-        easing: 'out(3)',
-        duration: 1200,
-        delay: (el: any, i: number) => 500 + 30 * i
-      });
-    }
-
-    if (subtitleRef.current) {
-      const subtitle = subtitleRef.current;
-      subtitle.innerHTML = subtitle.textContent!.replace(/\S/g, "<span class='letter inline-block'>$&</span>");
-
-      animate({
-        targets: '.hero-subtitle .letter',
-        translateY: [40, 0],
-        opacity: [0, 1],
-        easing: 'out(3)',
-        duration: 1200,
-        delay: (el: any, i: number) => 900 + 25 * i
-      });
-    }
-  }, []);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0E1A2B] dark:bg-[#151923] transition-colors duration-300">
@@ -46,10 +12,10 @@ function Hero({ scrollToSection }: HeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 space-y-8">
             <div className="space-y-2">
-              <h1 ref={titleRef} className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight">
+              <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight animate-fade-in-up">
                 Ishaan Wason
               </h1>
-              <p ref={subtitleRef} className="hero-subtitle text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F]">
+              <p className="hero-subtitle text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F] animate-fade-in-up animation-delay-300">
                 "Defined by Results"
               </p>
             </div>
