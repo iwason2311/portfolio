@@ -1,53 +1,37 @@
-import { BarChart3, Palette, Briefcase } from 'lucide-react';
+import { Brain, MessageSquare } from 'lucide-react';
 
 function Skills() {
   const skillCategories = [
     {
-      icon: BarChart3,
-      title: 'Operations and Analytics',
-      color: 'blue',
+      icon: Brain,
+      title: 'Analytical & Structured Thinking',
       skills: [
-        'Business operations',
-        'Process mapping',
-        'Workflow improvement',
-        'Excel',
-        'SQL beginner',
-        'Power BI beginner',
+        'Analytical problem solving',
+        'Structured thinking',
+        'Process awareness & documentation',
+        'Data-driven reasoning',
+        'Excel (analysis & reporting)',
+        'SQL (foundational)',
+        'Power BI',
         'Tableau',
         'R programming',
-        'Analytical problem solving',
-        'Structured execution',
-        'Process Optimization (Lean Six Sigma)',
-        'HubSpot CRM',
+        'Lean Six Sigma (concepts, in progress)',
       ],
     },
     {
-      icon: Palette,
-      title: 'Marketing and Creative',
-      color: 'blue',
+      icon: MessageSquare,
+      title: 'Communication & Delivery',
       skills: [
+        'Clear written communication',
+        'Stakeholder coordination',
+        'Cross-team collaboration',
         'Content creation',
-        'Social media strategy',
-        'Photography',
-        'Event marketing',
-        'Branding',
-        'Visual coordination',
-        'Digital campaigns',
         'Storytelling',
-      ],
-    },
-    {
-      icon: Briefcase,
-      title: 'Professional',
-      color: 'blue',
-      skills: [
-        'Leadership',
-        'Communication',
-        'Cross team coordination',
-        'Reliability',
+        'Branding & visual coordination',
+        'Digital campaigns',
+        'Social media strategy',
+        'Reliability & follow-through',
         'Initiative',
-        'Strategic thinking',
-        'Stakeholder management',
         'Bilingual (English/French)',
       ],
     },
@@ -56,15 +40,20 @@ function Skills() {
   return (
     <section id="skills" className="py-20 lg:py-32 bg-white dark:bg-[#1A1F2E] transition-colors duration-300">
       <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-16 text-center">
-          Skills I'm Building
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-4">
+            Skills
+          </h2>
+          <p className="text-lg text-[#A8ADB7] dark:text-[#B0B3BA]">
+            How I think, communicate, and execute.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="reveal-item card-hover bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg p-8 border-2 border-[#D3A96F]/20 transition-colors duration-300"
+              className="reveal-item bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg p-8 lg:p-10 border-2 border-[#D3A96F]/20 transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-[#D3A96F] rounded-lg">
@@ -75,16 +64,16 @@ function Skills() {
                 </h3>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <ul className="space-y-3">
                 {category.skills.map((skill, idx) => (
-                  <span
-                    key={idx}
-                    className="px-4 py-2 bg-[#D3A96F]/10 text-[#0E1A2B] dark:text-[#E8E9ED] rounded-lg text-sm font-medium hover:bg-[#D3A96F]/20 transition-colors border border-[#D3A96F]/30"
-                  >
-                    {skill}
-                  </span>
+                  <li key={idx} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-[#D3A96F] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#0E1A2B] dark:text-[#B0B3BA] leading-relaxed">
+                      {skill}
+                    </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
