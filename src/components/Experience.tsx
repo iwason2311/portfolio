@@ -1,4 +1,4 @@
-import { Building2, GraduationCap, Users, Cpu, Globe, Image, FileText } from 'lucide-react';
+import { Building2, GraduationCap, Users, Cpu, Globe, FileText } from 'lucide-react';
 
 function Experience() {
   const experiences = [
@@ -14,7 +14,19 @@ function Experience() {
         'Develop new marketing strategies and cross-club partnerships, increasing event engagement and student participation.',
         'Streamline campaign workflows and design processes, improving content turnaround and branding consistency by 40%.',
       ],
-      hasShowcase: true,
+      attachments: [],
+    },
+    {
+      icon: Users,
+      title: 'University of Waterloo Indian Cultural Association (UWICA)',
+      role: 'Content Creator',
+      period: '05/2025 – 12/2025',
+      location: 'University of Waterloo, Canada',
+      highlights: [
+        'Created digital content for cultural events, student engagement campaigns, and social media outreach.',
+        'Supported branding and visibility for UWICA initiatives through visual content.',
+        'Collaborated with the core team to align content with event themes and community messaging.',
+      ],
       attachments: [],
     },
     {
@@ -29,21 +41,6 @@ function Experience() {
         'Proposed and designed a HubSpot CRM and mobile app integration to streamline bookings, donor tracking, and volunteer engagement.',
         'Led a social media strategy that doubled engagement within one month and enhanced program visibility.',
       ],
-      hasShowcase: true,
-      attachments: [],
-    },
-    {
-      icon: Users,
-      title: 'University of Waterloo Indian Cultural Association (UWICA)',
-      role: 'Content Creator',
-      period: '05/2025 – 12/2025',
-      location: 'University of Waterloo, Canada',
-      highlights: [
-        'Created digital content for cultural events, student engagement campaigns, and social media outreach.',
-        'Supported branding and visibility for UWICA initiatives through visual content.',
-        'Collaborated with the core team to align content with event themes and community messaging.',
-      ],
-      hasShowcase: false,
       attachments: [],
     },
     {
@@ -59,7 +56,6 @@ function Experience() {
         'Conducted data analysis to enhance course effectiveness, contributing to a 20% increase in cheating detection accuracy and a 25% boost in customer satisfaction.',
         'Delivered a strategic plan that improved cheating detection accuracy by 20% and enhanced customer satisfaction by 25% through AI-driven automation.',
       ],
-      hasShowcase: false,
       attachments: [],
     },
     {
@@ -73,7 +69,6 @@ function Experience() {
         'Supported campaign planning, content creation, and digital promotion initiatives.',
         'Worked closely with the founding team on awareness and engagement strategies.',
       ],
-      hasShowcase: false,
       attachments: [
         {
           name: 'Letter of Recommendation – Founder, Yeh Mera India',
@@ -129,72 +124,8 @@ function Experience() {
                   </div>
                 </div>
 
-                {exp.hasShowcase && (
-                  <div className="mt-8 pt-8 border-t-2 border-[#D3A96F]/20">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Image size={20} className="text-[#D3A96F]" />
-                      <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
-                        Work Showcase
-                      </h4>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {exp.title === 'Habitat for Humanity Windsor-Essex' ? (
-                        <>
-                          <div className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
-                            <img
-                              src="/screenshot_2025-12-26_at_7.43.57_am.png"
-                              alt="Habitat for Humanity ReStore"
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <div className="bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
-                              <img
-                                src="/screenshot_2025-12-26_at_8.39.09_am.png"
-                                alt="Meeting with Richard Peddie"
-                                className="w-full h-auto object-contain"
-                              />
-                            </div>
-                            <p className="text-xs text-[#D3A96F] font-medium leading-relaxed">
-                              Got to meet former CEO of Maple Leafs Richard Peddie and secured a donation from him
-                            </p>
-                          </div>
-                          <div
-                            className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
-                          >
-                            <div className="w-full h-full flex items-center justify-center">
-                              <div className="text-center space-y-2">
-                                <Image size={32} className="mx-auto text-[#A8ADB7] dark:text-[#B0B3BA]" />
-                                <p className="text-xs font-medium text-[#A8ADB7] dark:text-[#B0B3BA]">
-                                  Showcase Item 3
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </>
-                      ) : (
-                        [1, 2, 3].map((item) => (
-                          <div
-                            key={item}
-                            className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors"
-                          >
-                            <div className="w-full h-full flex items-center justify-center">
-                              <div className="text-center space-y-2">
-                                <Image size={32} className="mx-auto text-[#A8ADB7] dark:text-[#B0B3BA]" />
-                                <p className="text-xs font-medium text-[#A8ADB7] dark:text-[#B0B3BA]">
-                                  Showcase Item {item}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))
-                      )}
-                    </div>
-                  </div>
-                )}
-
                 {exp.attachments && exp.attachments.length > 0 && (
-                  <div className={`${exp.hasShowcase ? 'mt-8' : 'mt-8 pt-8 border-t-2 border-[#D3A96F]/20'}`}>
+                  <div className="mt-8 pt-8 border-t-2 border-[#D3A96F]/20">
                     <div className="flex items-center gap-2 mb-4">
                       <FileText size={20} className="text-[#D3A96F]" />
                       <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
