@@ -1,4 +1,4 @@
-import { Building2, GraduationCap, Users, Cpu, Globe, FileText } from 'lucide-react';
+import { Building2, GraduationCap, Users, Cpu, Globe, FileText, Image } from 'lucide-react';
 
 function Experience() {
   const experiences = [
@@ -41,6 +41,7 @@ function Experience() {
         'Proposed and designed a HubSpot CRM and mobile app integration to streamline bookings, donor tracking, and volunteer engagement.',
         'Led a social media strategy that doubled engagement within one month and enhanced program visibility.',
       ],
+      hasShowcase: true,
       attachments: [],
     },
     {
@@ -124,8 +125,40 @@ function Experience() {
                   </div>
                 </div>
 
-                {exp.attachments && exp.attachments.length > 0 && (
+                {exp.hasShowcase && exp.title === 'Habitat for Humanity Windsor-Essex' && (
                   <div className="mt-8 pt-8 border-t-2 border-[#D3A96F]/20">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Image size={20} className="text-[#D3A96F]" />
+                      <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
+                        Work Showcase
+                      </h4>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
+                        <img
+                          src="/screenshot_2025-12-26_at_7.43.57_am.png"
+                          alt="Habitat for Humanity ReStore"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <div className="bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
+                          <img
+                            src="/screenshot_2025-12-26_at_8.39.09_am.png"
+                            alt="Meeting with Richard Peddie"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <p className="text-xs text-[#D3A96F] font-medium leading-relaxed">
+                          Got to meet former CEO of Maple Leafs Richard Peddie and secured a donation from him
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {exp.attachments && exp.attachments.length > 0 && (
+                  <div className={`${exp.hasShowcase ? 'mt-8' : 'mt-8 pt-8 border-t-2 border-[#D3A96F]/20'}`}>
                     <div className="flex items-center gap-2 mb-4">
                       <FileText size={20} className="text-[#D3A96F]" />
                       <h4 className="text-lg font-semibold text-[#0E1A2B] dark:text-[#E8E9ED]">
