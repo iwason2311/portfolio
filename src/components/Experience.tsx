@@ -165,7 +165,7 @@ function Experience() {
                       </div>
                       <div className="flex-1">
                         <span className="text-[#0E1A2B] dark:text-[#E8E9ED] font-medium group-hover:text-[#D3A96F] transition-colors block">
-                          Sample Reels & Content Work
+                          Project Deliverables & Media Archive
                         </span>
                         <span className="text-sm text-[#A8ADB7] dark:text-[#B0B3BA]">
                           View content posted on their channel
