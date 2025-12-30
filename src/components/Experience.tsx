@@ -1,4 +1,4 @@
-import { Building2, GraduationCap, Users, Cpu, Globe, FileText, Image } from 'lucide-react';
+import { Building2, GraduationCap, Users, Cpu, Globe, FileText, Image, ExternalLink } from 'lucide-react';
 
 function Experience() {
   const experiences = [
@@ -133,7 +133,7 @@ function Experience() {
                         Work Showcase
                       </h4>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                       <div className="aspect-video bg-white dark:bg-[#1A1F2E] rounded-lg overflow-hidden border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors">
                         <img
                           src="/screenshot_2025-12-26_at_7.43.57_am.png"
@@ -154,6 +154,25 @@ function Experience() {
                         </p>
                       </div>
                     </div>
+                    <a
+                      href="https://drive.google.com/drive/folders/1K4VneYIwK_e_aouzIO0BkAQAeFIDzxWu?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-4 bg-white dark:bg-[#1A1F2E] rounded-lg border-2 border-[#D3A96F]/30 hover:border-[#D3A96F] transition-colors group"
+                    >
+                      <div className="p-2 bg-[#D3A96F]/10 rounded-lg group-hover:bg-[#D3A96F]/20 transition-colors">
+                        <ExternalLink size={20} className="text-[#D3A96F]" />
+                      </div>
+                      <div className="flex-1">
+                        <span className="text-[#0E1A2B] dark:text-[#E8E9ED] font-medium group-hover:text-[#D3A96F] transition-colors block">
+                          Sample Reels & Content Work
+                        </span>
+                        <span className="text-sm text-[#A8ADB7] dark:text-[#B0B3BA]">
+                          View content posted on their channel
+                        </span>
+                      </div>
+                      <ExternalLink size={18} className="text-[#A8ADB7] group-hover:text-[#D3A96F] transition-colors" />
+                    </a>
                   </div>
                 )}
 
