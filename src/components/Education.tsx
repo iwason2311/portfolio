@@ -11,17 +11,17 @@ function Education() {
             <h3 className="text-2xl sm:text-3xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED]">
               University of Waterloo
             </h3>
-            <p className="text-lg text-[#0E1A2B]/80 dark:text-[#E8E9ED]/80 font-medium">
+            <p className="text-lg text-[#D3A96F] font-medium">
               Honours Arts and Business
             </p>
-            <p className="text-base text-[#0E1A2B]/70 dark:text-[#B0B3BA]">
+            <p className="text-base text-[#D3A96F]">
               Liberal Studies, Minor: International Trade & Economics
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center pt-2">
-              <p className="text-base text-[#0E1A2B]/60 dark:text-[#B0B3BA]/70">
+              <p className="text-base text-[#D3A96F]">
                 Waterloo, Ontario, Canada
               </p>
-              <p className="text-base text-[#0E1A2B]/60 dark:text-[#B0B3BA]/70">
+              <p className="text-base text-[#D3A96F]">
                 Expected Graduation: December 2026
               </p>
             </div>
@@ -31,10 +31,10 @@ function Education() {
             <h4 className="text-lg font-medium text-[#0E1A2B]/70 dark:text-[#B0B3BA]">
               Amity International School, Pushp Vihar
             </h4>
-            <p className="text-base text-[#0E1A2B]/60 dark:text-[#B0B3BA]/80">
+            <p className="text-base text-[#D3A96F]">
               High School
             </p>
-            <p className="text-base text-[#0E1A2B]/50 dark:text-[#B0B3BA]/60">
+            <p className="text-base text-[#D3A96F]">
               New Delhi, India
             </p>
           </div>
