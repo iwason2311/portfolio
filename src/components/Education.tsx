@@ -28,9 +28,9 @@ function Education() {
           </div>
 
           <div className="space-y-2 pt-4 border-t border-[#D3A96F]/10 dark:border-[#D3A96F]/20">
-            <h4 className="text-lg font-medium text-[#0E1A2B]/70 dark:text-[#B0B3BA]">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED]">
               Amity International School, Pushp Vihar
-            </h4>
+            </h3>
             <p className="text-base text-[#D3A96F]">
               High School
             </p>
