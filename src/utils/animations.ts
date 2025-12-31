@@ -98,7 +98,6 @@ export const initScrollAnimations = () => {
             opacity: [0, 1],
             translateY: [14, 0],
             duration: 550,
-            delay: anime.stagger(90),
             easing: 'easeOutQuart',
             complete: () => {
               items.forEach((item) => {
