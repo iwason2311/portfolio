@@ -81,7 +81,7 @@ function Experience() {
 
   return (
     <section id="experience" className="py-20 lg:py-32 bg-white dark:bg-[#1A1F2E] transition-colors duration-300">
-      <div className="reveal-section max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1A2B] dark:text-[#E8E9ED] mb-16 text-center">
           Experience
         </h2>
@@ -90,7 +90,7 @@ function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="reveal-item card-hover bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg overflow-hidden border-2 border-[#D3A96F]/20 transition-colors duration-300"
+              className="card-hover bg-[#F7F7F5] dark:bg-[#242936] rounded-xl shadow-lg overflow-hidden border-2 border-[#D3A96F]/20 transition-colors duration-300"
             >
               <div className="p-8 lg:p-10">
                 <div className="flex items-start gap-4 mb-6">
