@@ -73,7 +73,7 @@ function App() {
               Ishaan Wason
             </button>
 
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -96,7 +96,7 @@ function App() {
               </button>
             </div>
 
-            <div className="md:hidden flex items-center space-x-2">
+            <div className="lg:hidden flex items-center space-x-2">
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-lg text-[#0E1A2B] dark:text-[#E8E9ED] hover:bg-[#D3A96F]/10 transition-colors"
@@ -115,7 +115,7 @@ function App() {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden bg-[#F7F7F5] dark:bg-[#242936] border-t border-[#D3A96F]/20 transition-colors duration-300">
+          <div className="lg:hidden bg-[#F7F7F5] dark:bg-[#242936] border-t border-[#D3A96F]/20 transition-colors duration-300">
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <button
