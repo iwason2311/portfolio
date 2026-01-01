@@ -156,7 +156,7 @@ function App() {
             </p>
             <div className="flex space-x-6">
               <a
-                href="mailto:wasonishaan23@gmail.com"
+                href="mailto:contact@iwason.com"
                 className="text-[#A8ADB7] dark:text-[#B0B3BA] hover:text-[#D3A96F] transition-colors"
               >
                 <Mail size={20} />
