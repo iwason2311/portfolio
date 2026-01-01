@@ -15,7 +15,7 @@ function Hero({ scrollToSection }: HeroProps) {
               <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight animate-fade-in-up">
                 Ishaan Wason
               </h1>
-              <p className="hero-subtitle text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F] animate-fade-in-up animation-delay-300">
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#D3A96F]">
                 "Defined by Results"
               </p>
             </div>
