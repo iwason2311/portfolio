@@ -4,18 +4,15 @@ function Skills() {
   const skillCategories = [
     {
       icon: Brain,
-      title: 'Analytical & Structured Thinking',
+      title: 'Analytical & Structured Work',
       skills: [
-        'Analytical problem solving',
-        'Structured thinking',
-        'Process awareness & documentation',
-        'Data-driven reasoning',
-        'Excel (analysis & reporting)',
-        'SQL (foundational)',
+        'Problem decomposition',
+        'Excel',
+        'SQL',
         'Power BI',
         'Tableau',
         'R programming',
-        'Lean Six Sigma (concepts, in progress)',
+        'Lean Six Sigma',
       ],
     },
     {
@@ -23,16 +20,13 @@ function Skills() {
       title: 'Communication & Delivery',
       skills: [
         'Clear written communication',
-        'Stakeholder coordination',
         'Cross-team collaboration',
         'Content creation',
         'Storytelling',
         'Branding & visual coordination',
         'Digital campaigns',
         'Social media strategy',
-        'Reliability & follow-through',
-        'Initiative',
-        'Bilingual (English/French)',
+        'Ownership and follow-through',
       ],
     },
   ];
