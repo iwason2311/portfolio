@@ -150,7 +150,7 @@ function Experience() {
                           />
                         </div>
                         <p className="text-xs text-[#D3A96F] font-medium leading-relaxed">
-                          Got to meet former CEO of Maple Leafs Richard Peddie and secured a donation from him
+                          Met with former Maple Leafs CEO Mr Richard Peddie during a donor visit supporting the organization.
                         </p>
                       </div>
                     </div>
