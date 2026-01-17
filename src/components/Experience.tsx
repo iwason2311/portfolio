@@ -3,6 +3,21 @@ import { Building2, GraduationCap, Users, Cpu, Globe, FileText, Image, ExternalL
 function Experience() {
   const experiences = [
     {
+      icon: Building2,
+      title: 'Habitat for Humanity Windsor-Essex',
+      role: 'Marketing, Social Media, and Salvage Partnerships Assistant',
+      period: '01/2025 – 04/2025',
+      location: 'Windsor, ON',
+      highlights: [
+        'Managed outreach and logistics for the Kitchen Salvage Program; created content showcasing live removals to promote sustainability and community impact.',
+        'Secured donations and partnerships with 40+ local businesses, boosting ReStore inventory and revenue.',
+        'Proposed and designed a HubSpot CRM and mobile app integration to streamline bookings, donor tracking, and volunteer engagement.',
+        'Led a social media strategy that doubled engagement within one month and enhanced program visibility.',
+      ],
+      hasShowcase: true,
+      attachments: [],
+    },
+    {
       icon: GraduationCap,
       title: 'University of Waterloo Economics Society (UWES)',
       role: 'Vice President of Marketing',
@@ -27,21 +42,6 @@ function Experience() {
         'Supported branding and visibility for UWICA initiatives through visual content.',
         'Collaborated with the core team to align content with event themes and community messaging.',
       ],
-      attachments: [],
-    },
-    {
-      icon: Building2,
-      title: 'Habitat for Humanity Windsor-Essex',
-      role: 'Marketing, Social Media, and Salvage Partnerships Assistant',
-      period: '01/2025 – 04/2025',
-      location: 'Windsor, ON',
-      highlights: [
-        'Managed outreach and logistics for the Kitchen Salvage Program; created content showcasing live removals to promote sustainability and community impact.',
-        'Secured donations and partnerships with 40+ local businesses, boosting ReStore inventory and revenue.',
-        'Proposed and designed a HubSpot CRM and mobile app integration to streamline bookings, donor tracking, and volunteer engagement.',
-        'Led a social media strategy that doubled engagement within one month and enhanced program visibility.',
-      ],
-      hasShowcase: true,
       attachments: [],
     },
     {

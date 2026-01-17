@@ -3,9 +3,14 @@ import { Mail, Linkedin, MapPin, Download } from 'lucide-react';
 function Contact() {
   const resumes = [
     {
-      label: 'Download Resume (PDF)',
-      file: '/iwason-new.pdf',
-      filename: 'Ishaan_Wason_Resume.pdf',
+      label: 'Download Marketing Resume (PDF)',
+      file: '/iwason-marketing.pdf',
+      filename: 'Ishaan_Wason_Marketing_Resume.pdf',
+    },
+    {
+      label: 'Download Business/Operations Resume (PDF)',
+      file: '/iwason-bizops.pdf',
+      filename: 'Ishaan_Wason_Business_Operations_Resume.pdf',
     },
   ];
 
@@ -42,7 +47,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8 flex justify-center gap-3">
           {resumes.map((resume, index) => (
             <a
               key={index}
