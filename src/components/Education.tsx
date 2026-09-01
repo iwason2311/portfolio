@@ -14,9 +14,6 @@ function Education() {
             <p className="text-lg text-[#D3A96F] font-medium">
               Bachelor of Arts - Honours Arts & Business Majoring in Liberal studies
             </p>
-            <p className="text-base text-[#D3A96F]">
-              Liberal Studies, Minor: International Trade & Economics
-            </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center pt-2">
               <p className="text-base text-[#D3A96F]">
                 Waterloo, Ontario, Canada
