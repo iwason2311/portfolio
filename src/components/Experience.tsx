@@ -36,7 +36,7 @@ function Experience() {
       title: 'University of Waterloo Indian Cultural Association (UWICA)',
       role: 'Content Creator',
       period: '05/2025 – 12/2025',
-      location: 'University of Waterloo, Canada',
+      location: 'Waterloo, ON',
       highlights: [
         'Created digital content for cultural events, student engagement campaigns, and social media outreach.',
         'Supported branding and visibility for UWICA initiatives through visual content.',
