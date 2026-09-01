@@ -12,7 +12,7 @@ function Education() {
               University of Waterloo
             </h3>
             <p className="text-lg text-[#D3A96F] font-medium">
-              Honours Arts and Business
+              Bachelor of Arts - Honours Arts & Business Majoring in Liberal studies
             </p>
             <p className="text-base text-[#D3A96F]">
               Liberal Studies, Minor: International Trade & Economics
