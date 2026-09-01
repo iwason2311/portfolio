@@ -21,7 +21,7 @@ function Experience() {
       icon: GraduationCap,
       title: 'University of Waterloo Economics Society (UWES)',
       role: 'Vice President of Marketing',
-      period: '09/2025 – Present',
+      period: '09/2025 – 04/2026',
       location: 'Waterloo, ON',
       highlights: [
         'Lead marketing and branding strategy for UWES, overseeing event promotions, digital campaigns, and strategic collaborations.',
