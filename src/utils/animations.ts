@@ -70,7 +70,8 @@ export const initScrollAnimations = () => {
 
   const observerOptions = {
     root: null,
-    threshold: 0.15,
+    // Use a low threshold so tall, single-column sections can reveal on mobile.
+    threshold: 0.01,
     rootMargin: '0px',
   };
 
