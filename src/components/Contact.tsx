@@ -8,9 +8,9 @@ function Contact() {
       filename: 'Ishaan_Wason_Marketing_Resume.pdf',
     },
     {
-      label: 'Download Business/Operations Resume (PDF)',
+      label: 'Download Business & Strategy Resume (PDF)',
       file: '/iwason-bizops.pdf',
-      filename: 'Ishaan_Wason_Business_Operations_Resume.pdf',
+      filename: 'Ishaan_Wason_Business_Strategy_Resume.pdf',
     },
   ];
 
