@@ -3,16 +3,31 @@ import { Building2, GraduationCap, Users, Cpu, Globe, FileText, Image, ExternalL
 function Experience() {
   const experiences = [
     {
+      icon: GraduationCap,
+      title: 'University of Waterloo Economics Society (UWES)',
+      role: 'President',
+      period: '04/2026 – Present',
+      location: 'Waterloo, ON',
+      highlights: [
+        'Lead a 20-member cross-functional team across marketing, communications, events, and research, overseeing organizational priorities and execution.',
+        'Drive organizational strategy, event planning, team structure, and cross-functional initiatives, translating goals into clear responsibilities, timelines, and deliverables.',
+        'Manage recruitment, onboarding, task allocation, and team coordination, strengthening accountability and consistency across functions.',
+        'Launched and supported new initiatives including student research and economics-focused programming, expanding the society’s academic and professional engagement.',
+      ],
+      attachments: [],
+    },
+    {
       icon: Building2,
       title: 'Habitat for Humanity Windsor-Essex',
       role: 'Marketing, Social Media, and Salvage Partnerships Assistant',
       period: '01/2025 – 04/2025',
       location: 'Windsor, ON',
       highlights: [
-        'Managed outreach and logistics for the Kitchen Salvage Program; created content showcasing live removals to promote sustainability and community impact.',
-        'Secured donations and partnerships with 40+ local businesses, boosting ReStore inventory and revenue.',
-        'Proposed and designed a HubSpot CRM and mobile app integration to streamline bookings, donor tracking, and volunteer engagement.',
-        'Led a social media strategy that doubled engagement within one month and enhanced program visibility.',
+        'Executed digital and community marketing initiatives supporting sustainability programs, ReStore operations, business partnerships, and live salvage projects, strengthening program visibility and community engagement.',
+        'Managed partnership outreach and coordination with 40+ local businesses, supporting donor relationships, inventory flow, community awareness, and ReStore revenue-generating operations.',
+        'Designed and supported a CRM-enabled partnership workflow for donor intake, scheduling, volunteer coordination, and relationship tracking, improving process visibility across teams.',
+        'Created social media, promotional, and storytelling content aligned with campaign objectives, sustainability messaging, and audience needs.',
+        'Analyzed program activity and engagement trends to inform outreach prioritization, scheduling, campaign decisions, and resource allocation.',
       ],
       hasShowcase: true,
       attachments: [],
@@ -24,11 +39,12 @@ function Experience() {
       period: '09/2025 – 04/2026',
       location: 'Waterloo, ON',
       highlights: [
-        'Lead marketing and branding strategy for UWES, overseeing event promotions, digital campaigns, and strategic collaborations.',
-        'Manage a marketing team of three coordinators and one web content coordinator, conducting interviews, onboarding, and performance reviews.',
-        'Develop new marketing strategies and cross-club partnerships, increasing event engagement and student participation.',
-        'Streamline campaign workflows and design processes, improving content turnaround and branding consistency by 40%.',
+        'Led marketing and branding strategy across event promotions, digital campaigns, organizational initiatives, and student engagement efforts.',
+        'Managed marketing and web coordinators across recruitment, onboarding, task allocation, campaign planning, and execution.',
+        'Developed campaign strategies and cross-club partnerships, coordinating messaging, creative output, timelines, and promotional activities.',
+        'Standardized campaign workflows and design processes, improving communication, execution consistency, and brand alignment across the marketing function.',
       ],
+      note: 'Promoted to President in April 2026.',
       attachments: [],
     },
     {
@@ -38,24 +54,24 @@ function Experience() {
       period: '05/2025 – 12/2025',
       location: 'Waterloo, ON',
       highlights: [
-        'Created digital content for cultural events, student engagement campaigns, and social media outreach.',
-        'Supported branding and visibility for UWICA initiatives through visual content.',
-        'Collaborated with the core team to align content with event themes and community messaging.',
+        'Produced graphics, reels, social media posts, and promotional assets for cultural events and student engagement campaigns.',
+        'Supported visual identity, creative direction, and content strategy, maintaining consistent brand messaging across digital channels.',
+        'Collaborated with event and marketing teams to align content calendars, campaign messaging, and promotional execution with event objectives.',
       ],
       attachments: [],
     },
     {
       icon: Cpu,
-      title: 'Smart serve / University of Waterloo',
-      role: 'AI/ ML Analyst',
+      title: 'SmartServe / University of Waterloo',
+      role: 'AI/ML Analyst',
       period: '05/2024 – 08/2024',
       location: 'Waterloo, ON',
       highlights: [
-        'Achieved certifications in Azure AI Fundamentals (AI-900) and Azure Fundamentals (AZ-900).',
-        'Collaborated with Smart Serve Ontario to enhance online course integrity using AI technologies like voice recognition and eye tracking.',
-        'Improved customer service by optimizing chatbot performance, reducing response time by 30%.',
-        'Conducted data analysis to enhance course effectiveness, contributing to a 20% increase in cheating detection accuracy and a 25% boost in customer satisfaction.',
-        'Delivered a strategic plan that improved cheating detection accuracy by 20% and enhanced customer satisfaction by 25% through AI-driven automation.',
+        'Analyzed customer interaction and response-time data within Zendesk to identify opportunities for improving digital service performance.',
+        'Evaluated AI-enabled customer-service solutions including generative responses, conditional logic, multilingual support, and chatbot personas.',
+        'Compared Zendesk, Freshdesk, and Google Dialogflow across cost, scalability, integration, and implementation considerations.',
+        'Translated technical research and system testing into operational recommendations, supporting improvements in customer experience, service efficiency, and data-informed decision-making.',
+        'Contributed to improvements that reduced average customer response time by approximately 30%, based on internal reporting.',
       ],
       attachments: [],
     },
@@ -64,11 +80,12 @@ function Experience() {
       title: 'Yeh Mera India',
       role: 'Marketing Intern',
       period: '05/2021 – 08/2021',
-      location: 'Remote (India)',
+      location: 'Remote, India',
       highlights: [
-        'Assisted in marketing and outreach initiatives for a non-profit organization focused on social impact in India.',
-        'Supported campaign planning, content creation, and digital promotion initiatives.',
-        'Worked closely with the founding team on awareness and engagement strategies.',
+        'Supported digital marketing and outreach campaigns for a social-impact nonprofit during the COVID-19 period.',
+        'Assisted with content creation, social media execution, and campaign planning to strengthen awareness and online engagement.',
+        'Collaborated with the founding team on brand communication, campaign messaging, and engagement initiatives.',
+        'Managed assigned responsibilities independently in a remote environment, supporting reliable campaign execution and team coordination.',
       ],
       attachments: [
         {
@@ -122,6 +139,11 @@ function Experience() {
                         </li>
                       ))}
                     </ul>
+                    {exp.note && (
+                      <p className="mt-4 text-sm text-[#D3A96F] font-medium">
+                        {exp.note}
+                      </p>
+                    )}
                   </div>
                 </div>
 
