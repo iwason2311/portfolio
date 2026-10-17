@@ -23,21 +23,21 @@ export const certificationData = {
     {
       title: 'AI & Technology',
       certifications: [
-        { title: 'Certificate of completion: Claude 101', credentialUrl: '' },
-        { title: 'Certificate of completion: AI Fluency for students', credentialUrl: '' },
-        { title: 'Microsoft Certified: Azure AI Fundamentals', credentialUrl: '' },
+        { title: 'Certificate of completion: Claude 101', credentialUrl: 'https://verify.skilljar.com/c/rhjqxeq7pcy7' },
+        { title: 'Certificate of completion: AI Fluency for students', credentialUrl: 'https://verify.skilljar.com/c/h2bfpntr8cpn' },
+        { title: 'Microsoft Certified: Azure AI Fundamentals', credentialUrl: 'https://www.credly.com/badges/f05f97f4-770d-4edb-b79d-3b4561b3bedd/linked_in_profile' },
       ],
     },
     {
       title: 'Marketing',
       certifications: [
-        { title: 'Marketing in a Digital World', credentialUrl: '' },
+        { title: 'Marketing in a Digital World', credentialUrl: 'https://coursera.org/share/3290910d6ad181a0c0fd9085534678a7' },
       ],
     },
     {
       title: 'Creative & Other',
       certifications: [
-        { title: 'Cameras, Exposure, and Photography', credentialUrl: '' },
+        { title: 'Cameras, Exposure, and Photography', credentialUrl: 'https://coursera.org/share/9d72cd95bea3ff3529f895ca2485c6a9' },
       ],
     },
   ] satisfies { title: string; certifications: Certification[] }[],
