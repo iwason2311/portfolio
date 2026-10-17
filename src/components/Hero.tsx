@@ -22,14 +22,11 @@ function Hero({ scrollToSection }: HeroProps) {
             <div className="hero-cta">
               <div className="max-w-2xl space-y-4 text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-relaxed">
                 <p>
-                  I'm a final-year Arts &amp; Business student at the University of Waterloo, graduating in December 2026, with experience across business operations analytics, marketing, and organizational leadership.
-                </p>
-                <p>
-                  I'm driven by understanding how businesses operate at their core. How people, processes, and decisions come together to produce results. From small teams to large organizations, I'm interested in identifying inefficiencies, improving workflows, and helping businesses perform more effectively.
+                  Final-year Arts &amp; Business student at the University of Waterloo, graduating December 2026. Passionate about understanding how businesses operate, improving processes, and driving efficiency through analytical thinking and collaboration.
                 </p>
               </div>
               <div className="max-w-2xl mt-5 text-[#D3A96F] leading-relaxed">
-                <p className="font-semibold">Open to full-time opportunities starting January 2027 across:</p>
+                <p className="font-semibold">Open to full-time opportunities from January 2027:</p>
                 <p className="mt-1 font-medium">Marketing | Business Operations | Commercial Real Estate Analytics | Supply Chain</p>
               </div>
             </div>
