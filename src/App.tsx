@@ -5,6 +5,7 @@ import MyStory from './components/MyStory';
 import WhatIDo from './components/WhatIDo';
 import Education from './components/Education';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Coursework from './components/Coursework';
@@ -19,7 +20,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'story', 'now', 'education', 'experience', 'projects', 'skills', 'coursework', 'values', 'contact'];
+      const sections = ['hero', 'story', 'now', 'education', 'experience', 'projects', 'certifications', 'skills', 'coursework', 'values', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -55,6 +56,7 @@ function App() {
     { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'skills', label: 'Skills' },
     { id: 'coursework', label: 'Coursework' },
     { id: 'values', label: 'Values' },
@@ -73,7 +75,7 @@ function App() {
               Ishaan Wason
             </button>
 
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden xl:flex items-center space-x-4 2xl:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -96,7 +98,7 @@ function App() {
               </button>
             </div>
 
-            <div className="lg:hidden flex items-center space-x-2">
+            <div className="xl:hidden flex items-center space-x-2">
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-lg text-[#0E1A2B] dark:text-[#E8E9ED] hover:bg-[#D3A96F]/10 transition-colors"
@@ -115,7 +117,7 @@ function App() {
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden bg-[#F7F7F5] dark:bg-[#242936] border-t border-[#D3A96F]/20 transition-colors duration-300">
+          <div className="xl:hidden bg-[#F7F7F5] dark:bg-[#242936] border-t border-[#D3A96F]/20 transition-colors duration-300">
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <button
@@ -142,6 +144,7 @@ function App() {
         <Education />
         <Experience />
         <Projects />
+        <Certifications />
         <Skills />
         <Coursework />
         <Values />

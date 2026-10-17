@@ -10,7 +10,7 @@ function Hero({ scrollToSection }: HeroProps) {
     <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0E1A2B] dark:bg-[#151923] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="order-2 lg:order-1 space-y-8">
+          <div className="order-2 lg:order-1 space-y-6 lg:space-y-8">
             <div className="space-y-2">
               <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight animate-fade-in-up">
                 Ishaan Wason
@@ -20,9 +20,18 @@ function Hero({ scrollToSection }: HeroProps) {
               </p>
             </div>
             <div className="hero-cta">
-              <p className="text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-relaxed max-w-2xl">
-                Focused on how businesses actually work — the economics behind decisions, the operations behind execution.
-              </p>
+              <div className="max-w-2xl space-y-4 text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-relaxed">
+                <p>
+                  I'm a final-year Arts &amp; Business student at the University of Waterloo, graduating in December 2026, with experience across business operations analytics, marketing, and organizational leadership.
+                </p>
+                <p>
+                  I'm driven by understanding how businesses operate at their core. How people, processes, and decisions come together to produce results. From small teams to large organizations, I'm interested in identifying inefficiencies, improving workflows, and helping businesses perform more effectively.
+                </p>
+              </div>
+              <div className="max-w-2xl mt-5 text-[#D3A96F] leading-relaxed">
+                <p className="font-semibold">Open to full-time opportunities starting January 2027 across:</p>
+                <p className="mt-1 font-medium">Marketing | Business Operations | Commercial Real Estate Analytics | Supply Chain</p>
+              </div>
             </div>
 
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
