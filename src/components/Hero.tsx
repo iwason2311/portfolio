@@ -26,7 +26,7 @@ function Hero({ scrollToSection }: HeroProps) {
                 </p>
               </div>
               <div className="max-w-2xl mt-5 text-[#D3A96F] leading-relaxed">
-                <p className="font-semibold">Open to full-time opportunities from January 2027:</p>
+                <p className="font-semibold">Seeking full time opportunities starting from January 2027:</p>
                 <p className="mt-1 font-medium">Marketing | Business Operations | Commercial Real Estate Analytics | Supply Chain</p>
               </div>
             </div>
