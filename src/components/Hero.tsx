@@ -9,8 +9,8 @@ function Hero({ scrollToSection }: HeroProps) {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0E1A2B] dark:bg-[#151923] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="order-2 lg:order-1 space-y-6 lg:space-y-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.62fr)_minmax(0,1fr)] gap-12 lg:gap-16 items-center lg:items-start">
+          <div className="order-2 lg:order-1 min-w-0 space-y-6 lg:space-y-8">
             <div className="space-y-2">
               <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white dark:text-[#E8E9ED] leading-tight animate-fade-in-up">
                 Ishaan Wason
@@ -20,9 +20,9 @@ function Hero({ scrollToSection }: HeroProps) {
               </p>
             </div>
             <div className="hero-cta">
-              <div className="max-w-2xl space-y-4 text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-relaxed">
+              <div className="max-w-2xl space-y-4 text-lg sm:text-xl text-[#A8ADB7] dark:text-[#B0B3BA] leading-[1.55]">
                 <p>
-                  Final-year Arts &amp; Business student at the University of Waterloo, graduating December 2026. Passionate about understanding how businesses operate, improving processes, and driving efficiency through analytical thinking and collaboration.
+                  Final-year Arts &amp; Business student at the University of Waterloo, graduating December 2026. Driven by understanding how businesses operate, improving processes, and making organizations more efficient.
                 </p>
               </div>
               <div className="max-w-2xl mt-5 text-[#D3A96F] leading-relaxed">
