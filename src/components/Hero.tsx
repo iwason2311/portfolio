@@ -53,9 +53,9 @@ function Hero({ scrollToSection }: HeroProps) {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#D3A96F] to-[#C09960] rounded-full blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-[#D3A96F]/30">
                 <img
-                  src="/img_2319_2_optimized_5000.jpg"
+                  src="/was_3560_hero.jpg"
                   alt="Ishaan Wason - Professional Portrait"
-                  className="w-full h-full object-cover rotate-90"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
