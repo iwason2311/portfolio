@@ -38,6 +38,7 @@ export const certificationData = {
       title: 'Creative & Other',
       certifications: [
         { title: 'Cameras, Exposure, and Photography', credentialUrl: 'https://coursera.org/share/9d72cd95bea3ff3529f895ca2485c6a9' },
+        { title: 'Six Sigma and the Organization (Advanced)', credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/LP4NS6AQALY3' },
       ],
     },
   ] satisfies { title: string; certifications: Certification[] }[],
